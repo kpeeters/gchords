@@ -126,7 +126,7 @@
    { \def\ttest{t}%
      \ifx\modstr\ttest{\linethickness{\topfretsiz}\put(\xoff,\myvpos){\chline{\truewidth}}\thinlines}%
      \else {\advance\topline by -1%
-            \put(\xoff,\topline){\hbox to 0pt{\hss\fretposfont\modstr~}}%
+            \put(\xoff,\topline){\raisebox{-.5em}{\hbox to 0pt{\hss\fretposfont\modstr~}}}%
            }%
      \fi%
    }
