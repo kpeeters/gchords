@@ -41,27 +41,22 @@ The package consists of the following files:
 If gchords is not what you are looking for, maybe one of these
 programs can help:
 
-* GuitarTeX
+* GuitarTeX [https://guitartex2.sourceforge.net/]
  
  Graphical tool in Perl/TK for creation of guitar song sheets and song
  books, including tablature and chord diagrams (the latter using
  postscript, will use gchords.sty in a future version).
  
-* MUP
+* MUP [http://www.arkkra.com/]
  
  This program reads a text file with the description of music and
  outputs a postscript file. It has guitar chords added as an option,
  but I guess you can use that feature separately too. Does of course
  not mix with TeX as nicely as gchords, but the output looks good.
  
- * guitar.sty
+* MuseScore [https://musescore.org/en]
   
- In case you only want to typeset the names of chords over the
- lyrics, this package has several useful facilities.
-
-* MuseScore
-  
- A new graphical music score typesetter.
+ A complete graphical music score typesetter.
 
 
 
