@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\setlength{\parindent}{0pt}
+% \setlength{\textwidth}{6.5in}
+\setlength{\textwidth}{7.2in}
+
+% \usepackage{gchords2}
+\usepackage{gchords}
+
+\iftrue
+% From: Richard Cobbe (cobbe@directlink.net)
+% Subject: Re: Raised Guitar Chords in LaTeX 
+% Newsgroups: comp.text.tex
+% Date: 2000/04/20 
+% \newcommand{\chord}...
+
+\newcommand\mychords{
+\def\chordsize{1.6mm}   % distance between two frets (and two strings)
+\font\fingerfont=cmr5  % font used for numbering fingers
+% \font\fingerfont=cmmi5   % font used for numbering fingers
+\font\namefont=cmr10    % font used for labeling of the chord
+\font\fretposfont=cmr7  % font used for the fret position marker
+% \def\dampsymbol{$\scriptstyle\times$} %  `damp this string' marker
+\def\dampsymbol{{\tiny$\scriptstyle\times$}} %  `damp this string' marker
+}
+
+\renewcommand\yoff{3}
+\renewcommand\fingsiz{1.6}
+
+\newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
+\newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
+\newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
+\newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
+\newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
+\newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
+\newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
+\newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
+\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
+\newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
+\newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
+\newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
+\newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
+\newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
+\newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
+\newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
+\newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
+\newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
+\newcommand{\Fsmin}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
+\newcommand{\FsminLight}{\chord{t}{x,x,f3p4,f1p2,f1p2,f1p2,}{F\#m}}
+\newcommand{\FsminBasSeveN}{\chord{t}{x,x,f3p3,f1p2,f1p2,f1p2,}{F\#m/E\#}}
+\newcommand{\FsminBasSeven}{\chord{t}{x,x,f2p2,f1p2,f1p2,f1p2,}{F\#m/E}}
+\newcommand{\FsminSeven}{\chord{t}{f1p2,p4,p4,f1p2,p5,f1p2,}{F\#7m}}
+\newcommand{\Gsminseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
+
+\fi
+
+\begin{document}
+
+\mychords
+
+% \mediumchords
+% \chord{t}{x,f3p3,f2p2,n,f1p1,f4p3,}{C}
+\pagestyle{empty}
+
+% textwidth is \textwidth.
+\begin{center}
+\Large
+\textbf{Getting to Know You} / \textsl{Rogers \& Hammerstein} \\
+Arranged \& Performed: \textsl{James Taylor} \\
+{\normalsize Recover \& Typeset: \textsl{Yotam Medini}}
+\end{center}
+
+\begin{verse}
+ \large
+ Getting to \upchord{\AsevenMaj}know you,
+ Getting to know all \upchord{\EsevenFour}{about} \upchord{\EseveN}{you} 
+  \quad\upchord{\EseveNNine}{\qquad }  \upchord{\EseveN}{\qquad } \\
+ Getting to \upchord{\Bm}{like} \quad\upchord{\BmseveN}{you},
+ \upchord{\Bmseven}{Gett}ing to hope \upchord{\Eseven}{you} like 
+ \upchord{\AsevenMaj}{me}  
+ \qquad\upchord{\BmsevenA}{\qquad}  \upchord{\Eseven}{\qquad}\\
+
+ Getting to \upchord{\AsevenMaj}know you,
+ Putting it my way, but \upchord{\D}{nice} --- \upchord{\DseveN}ly 
+   \qquad\upchord{\Dsix}{\qquad} \\
+ You are pre\upchord{\FsminSeven}{cise}ly \upchord{\Bseven}{my} cup of 
+ \upchord{\Bmseven}{tea} \quad\upchord{\Eseven}{\quad} \\
+
+ Getting to \upchord{\AsevenMaj}know you,
+ Getting to feel free and \upchord{\EsevenFour}{ea} --- \upchord{\EseveN}{sy} 
+  \quad\upchord{\EseveNNine}{\qquad}  \upchord{\EseveN}{\qquad } \\
+ When I am \upchord{\Bm}{with} \upchord{\BmseveN}{you},
+ \upchord{\Bmseven}{Gett}ing to know \upchord{\Eseven}{what} to
+ \upchord{\A}{say}  \qquad\upchord{\Aseven}{\qquad}
+
+\pagebreak
+
+ Haven't you \upchord{\D}{no}ticed,
+ \upchord{\Gsminseven}{Suddenly} I'm \upchord{\CssevenLight}{bright} 
+ and \upchord{\Fsmin}{breezy} \upchord{\Bseven}{\qquad}\\
+ Because of \upchord{\A}{all} \quad \upchord{\Fsmin}{the} 
+   \quad\upchord{\Bmseven}{beautiful} and \upchord{\Eseven}{new}\\
+ \upchord{\FsminLight}{Things} \quad\upchord{\FsminBasSeveN}{I'm}
+    \qquad\upchord{\FsminBasSeven}{learning} about \upchord{\BsevenBasDs}{you}\\
+ \upchord{\DmBasB}{Day} \quad\upchord{\Eseven}{by} 
+   \qquad[ \upchord{\A}{day} \(\mid\) Getting to \ldots ]
+\end{verse}
+
+
+\end{document}
+
